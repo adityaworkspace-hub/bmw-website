@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW Experience | Build Your Dream & Book Test Drive</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- BMW M Heritage Stripe -->
+  <div class="m-brand-stripe"></div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand">
+        <!-- BMW SVG Roundel -->
+        <svg class="bmw-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" fill="#000000" stroke="#cccccc" stroke-width="2.5"/>
+          <circle cx="50" cy="50" r="45" fill="none" stroke="#777777" stroke-width="1"/>
+          <circle cx="50" cy="50" r="32" fill="#000000" stroke="#ffffff" stroke-width="1.5"/>
+          <path d="M50,50 L50,18 A32,32 0 0,1 82,50 Z" fill="#0066b1"/>
+          <path d="M50,50 L82,50 A32,32 0 0,1 50,82 Z" fill="#ffffff"/>
+          <path d="M50,50 L50,82 A32,32 0 0,1 18,50 Z" fill="#0066b1"/>
+          <path d="M50,50 L18,50 A32,32 0 0,1 50,18 Z" fill="#ffffff"/>
+          <text x="30" y="16" fill="#ffffff" font-size="11" font-family="'Segoe UI', Arial, sans-serif" font-weight="900">B</text>
+          <text x="45" y="13" fill="#ffffff" font-size="11" font-family="'Segoe UI', Arial, sans-serif" font-weight="900">M</text>
+          <text x="63" y="16" fill="#ffffff" font-size="11" font-family="'Segoe UI', Arial, sans-serif" font-weight="900">W</text>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-title">BMW</span>
+          <span class="brand-subtitle">Vibrant Motion</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="models.html" class="nav-link">Models & Heritage</a></li>
+        <li><a href="experience.html" class="nav-link active">Build & Drive</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#testdrive" class="btn btn-electric btn-sm">Book VIP Drive</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="section" style="padding-bottom: 2rem;">
+      <div class="container text-center" style="text-align: center;">
+        <span class="section-badge">Bespoke Studio</span>
+        <h1 class="section-title">Design Your <span class="gradient-text-electric">Ultimate Machine</span></h1>
+        <p class="section-desc" style="max-width: 680px; margin: 0 auto;">
+          Customize chassis, high-voltage finishes, lightweight wheels, and tailored cockpits. Then schedule an adrenaline-charged VIP test drive at your nearest BMW Experience Center.
+        </p>
+      </div>
+    </section>
+
+    <!-- Interactive Configurator Studio Section -->
+    <section class="section" style="padding-top: 1rem;" id="bmwConfigurator">
+      <div class="container">
+        <div class="configurator-wrapper">
+
+          <!-- Left Column: Sticky Stage & Pricing Summary -->
+          <div class="builder-preview-box">
+            <div class="builder-stage">
+              <div class="builder-stage-glow"></div>
+              
+              <!-- Car SVG Preview -->
+              <div style="width: 100%; max-width: 550px; position: relative; z-index: 2;">
+                <svg viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; display: block;">
+                  <defs>
+                    <linearGradient id="expGlassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#14213d" stop-opacity="0.9"/>
+                      <stop offset="50%" stop-color="#00f2fe" stop-opacity="0.3"/>
+                      <stop offset="100%" stop-color="#0a0e17" stop-opacity="0.95"/>
+                    </linearGradient>
+                  </defs>
+
+                  <ellipse cx="450" cy="275" rx="410" ry="18" fill="#000" opacity="0.6"/>
+
+                  <!-- Body Panels (Class: builder-car-paint) -->
+                  <path class="builder-car-paint" d="M78,245 C80,210 100,185 140,180 L235,178 C250,178 280,180 300,195 L340,205 L600,205 C625,190 655,185 680,185 L760,190 C800,195 830,225 835,252 L780,260 L140,260 Z" fill="#E5F200"/>
+                  <path class="builder-car-paint" d="M225,180 L320,115 C345,98 390,92 470,92 L570,92 C625,92 680,120 715,160 L730,185 L600,190 L330,190 Z" fill="#E5F200"/>
+                  <path class="builder-car-paint" d="M680,185 L815,200 C835,205 850,220 852,240 L840,256 L770,258 L710,185 Z" fill="#E5F200"/>
+
+                  <!-- Roof & Glass -->
+                  <path d="M335,118 L465,102 L565,102 C615,102 655,128 680,165 L590,168 L485,168 L360,168 Z" fill="url(#expGlassGrad)" stroke="#1a2333" stroke-width="2"/>
+                  <line x1="480" y1="102" x2="480" y2="168" stroke="#111827" stroke-width="4"/>
+
+                  <!-- Headlights / Taillights -->
+                  <polygon points="808,215 840,226 832,232 800,223" fill="#ffffff" filter="drop-shadow(0 0 6px #00f2fe)"/>
+                  <path d="M85,208 L125,208 C135,208 140,215 135,222 L92,222 Z" fill="#ff0044" filter="drop-shadow(0 0 6px #ff0044)"/>
+
+                  <!-- Wheels -->
+                  <g transform="translate(195, 245)">
+                    <circle cx="0" cy="0" r="54" fill="#181b22" stroke="#2c3240" stroke-width="4"/>
+                    <circle cx="0" cy="0" r="38" fill="#5a6275"/>
+                    <rect x="-35" y="-20" width="16" height="24" rx="4" fill="#e22718"/>
+                    <circle cx="0" cy="0" r="36" fill="none" stroke="#d4d4d8" stroke-width="3"/>
+                    <circle cx="0" cy="0" r="14" fill="#0c0e14" stroke="#ffffff" stroke-width="2"/>
+                    <line x1="0" y1="0" x2="0" y2="-36" stroke="#e4e4e7" stroke-width="3"/>
+                    <line x1="0" y1="0" x2="34" y2="-11" stroke="#e4e4e7" stroke-width="3"/>
+                    <line x1="0" y1="0" x2="21" y2="29" stroke="#e4e4e7" stroke-width="3"/>
+                    <line x1="0" y1="0" x2="-21" y2="29" stroke="#e4e4e7" stroke-width="3"/>
+                    <line x1="0" y1="0" x2="-34" y2="-11" stroke="#e4e4e7" stroke-width="3"/>
+                  </g>
+                  <g transform="translate(710, 245)">
+                    <circle cx="0" cy="0" r="54" fill="#181b22" stroke="#2c3240" stroke-width="4"/>
+                    <circle cx="0" cy="0" r="38" fill="#5a6275"/>
+                    <rect x="-35" y="-20" width="16" height="24" rx="4" fill="#e22718"/>
+                    <circle cx="0" cy="0" r="36" fill="none" stroke="#d4d4d8" stroke-width="3"/>
+                    <circle cx="0" cy="0" r="14" fill="#0c0e14" stroke="#ffffff" stroke-width="2"/>
+                    <line x1="0" y1="0" x2="0" y2="-36" stroke="#e4e4e7" stroke-width="3"/>
+                    <line x1="0" y1="0" x2="34" y2="-11" stroke="#e4e4e7" stroke-width="3"/>
+                    <line x1="0" y1="0" x2="21" y2="29" stroke="#e4e4e7" stroke-width="3"/>
+                    <line x1="0" y1="0" x2="-21" y2="29" stroke="#e4e4e7" stroke-width="3"/>
+                    <line x1="0" y1="0" x2="-34" y2="-11" stroke="#e4e4e7" stroke-width="3"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Configuration Summary Breakdown -->
+            <div class="builder-config-summary">
+              <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: #fff;">Build Summary</h3>
+              <div class="summary-row">
+                <span style="color: var(--text-muted);">Selected Model:</span>
+                <span id="sumModel" style="font-weight: 700; color: #fff;">BMW M4 Competition Coupe ($82,200)</span>
+              </div>
+              <div class="summary-row">
+                <span style="color: var(--text-muted);">Exterior Paint:</span>
+                <span id="sumPaint" style="font-weight: 700; color: #fff;">Sao Paulo Yellow (+$1,200)</span>
+              </div>
+              <div class="summary-row">
+                <span style="color: var(--text-muted);">Wheel Setup:</span>
+                <span id="sumWheels" style="font-weight: 700; color: #fff;">19"/20" M Double-Spoke Bicolor (Included)</span>
+              </div>
+              <div class="summary-row">
+                <span style="color: var(--text-muted);">Interior Trim:</span>
+                <span id="sumInterior" style="font-weight: 700; color: #fff;">Kyalami Orange / Black (Included)</span>
+              </div>
+              <div class="summary-row total">
+                <span>Total Estimated MSRP:</span>
+                <span id="sumTotal">$83,400</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+              <a href="#testdrive" class="btn btn-primary" style="flex: 1;">Proceed to VIP Test Drive</a>
+            </div>
+          </div>
+
+          <!-- Right Column: Step-by-Step Option Selectors -->
+          <div class="builder-steps-container">
+
+            <!-- STEP 1: MODEL SELECTION -->
+            <div class="builder-step-card">
+              <div class="step-header">
+                <div class="step-num">1</div>
+                <h3 class="step-title">Select Chassis & Powertrain</h3>
+              </div>
+              <div class="options-pill-grid">
+                <button class="option-pill-btn opt-btn active" data-type="model" data-name="BMW M4 Competition Coupe" data-price="82200">
+                  <span class="pill-title">M4 Competition</span>
+                  <span class="pill-extra">Coupe • 503 HP</span>
+                  <span class="pill-extra" style="color: var(--neon-cyan);">$82,200</span>
+                </button>
+                <button class="option-pill-btn opt-btn" data-type="model" data-name="BMW i7 xDrive60 Sedan" data-price="105700">
+                  <span class="pill-title">i7 xDrive60</span>
+                  <span class="pill-extra">Electric • 536 HP</span>
+                  <span class="pill-extra" style="color: var(--neon-cyan);">$105,700</span>
+                </button>
+                <button class="option-pill-btn opt-btn" data-type="model" data-name="BMW XM Savage Hybrid" data-price="159000">
+                  <span class="pill-title">XM Savage</span>
+                  <span class="pill-extra">V8 Hybrid • 738 HP</span>
+                  <span class="pill-extra" style="color: var(--neon-cyan);">$159,000</span>
+                </button>
+                <button class="option-pill-btn opt-btn" data-type="model" data-name="BMW iX M60 SAV" data-price="111500">
+                  <span class="pill-title">iX M60</span>
+                  <span class="pill-extra">Electric • 610 HP</span>
+                  <span class="pill-extra" style="color: var(--neon-cyan);">$111,500</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 2: EXTERIOR PAINT -->
+            <div class="builder-step-card">
+              <div class="step-header">
+                <div class="step-num">2</div>
+                <h3 class="step-title">Exterior Finish & Underglow</h3>
+              </div>
+              <div class="options-pill-grid">
+                <button class="option-pill-btn opt-btn active" data-type="paint" data-name="Sao Paulo Yellow" data-price="1200" data-hex="#E5F200" data-glow="#f5ee38">
+                  <div style="width: 22px; height: 22px; border-radius: 50%; background: #E5F200; margin: 0 auto 0.4rem auto; box-shadow: 0 0 10px #E5F200;"></div>
+                  <span class="pill-title">Sao Paulo Yellow</span>
+                  <span class="pill-extra">+$1,200</span>
+                </button>
+                <button class="option-pill-btn opt-btn" data-type="paint" data-name="Isle of Man Green" data-price="1500" data-hex="#0F8A5F" data-glow="#00ff87">
+                  <div style="width: 22px; height: 22px; border-radius: 50%; background: #0F8A5F; margin: 0 auto 0.4rem auto; box-shadow: 0 0 10px #0F8A5F;"></div>
+                  <span class="pill-title">Isle of Man Green</span>
+                  <span class="pill-extra">+$1,500</span>
+                </button>
+                <button class="option-pill-btn opt-btn" data-type="paint" data-name="Marina Bay Blue" data-price="0" data-hex="#0066B1" data-glow="#00f2fe">
+                  <div style="width: 22px; height: 22px; border-radius: 50%; background: #0066B1; margin: 0 auto 0.4rem auto; box-shadow: 0 0 10px #0066B1;"></div>
+                  <span class="pill-title">Marina Bay Blue</span>
+                  <span class="pill-extra">Included</span>
+                </button>
+                <button class="option-pill-btn opt-btn" data-type="paint" data-name="Toronto Red" data-price="0" data-hex="#D31027" data-glow="#ff2a54">
+                  <div style="width: 22px; height: 22px; border-radius: 50%; background: #D31027; margin: 0 auto 0.4rem auto; box-shadow: 0 0 10px #D31027;"></div>
+                  <span class="pill-title">Toronto Red</span>
+                  <span class="pill-extra">Included</span>
+                </button>
+                <button class="option-pill-btn opt-btn" data-type="paint" data-name="Twilight Purple" data-price="2000" data-hex="#6B1182" data-glow="#c026d3">
+                  <div style="width: 22px; height: 22px; border-radius: 50%; background: #6B1182; margin: 0 auto 0.4rem auto; box-shadow: 0 0 10px #6B1182;"></div>
+                  <span class="pill-title">Twilight Purple</span>
+                  <span class="pill-extra">+$2,000</span>
+                </button>
+                <button class="option-pill-btn opt-btn" data-type="paint" data-name="Frozen Pure Grey" data-price="3600" data-hex="#555B66" data-glow="#94a3b8">
+                  <div style="width: 22px; height: 22px; border-radius: 50%; background: #555B66; margin: 0 auto 0.4rem auto; box-shadow: 0 0 10px #555B66;"></div>
+                  <span class="pill-title">Frozen Pure Grey</span>
+                  <span class="pill-extra">+$3,600</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 3: WHEELS & BRAKES -->
+            <div class="builder-step-card">
+              <div class="step-header">
+                <div class="step-num">3</div>
+                <h3 class="step-title">Wheels & M Compound Brakes</h3>
+              </div>
+              <div class="options-pill-grid">
+                <button class="option-pill-btn opt-btn active" data-type="wheels" data-name="19/20 M Double-Spoke Bicolor" data-price="0">
+                  <span class="pill-title">19"/20" M Double-Spoke</span>
+                  <span class="pill-extra">Standard Track Alloy</span>
+                  <span class="pill-extra" style="color: var(--neon-cyan);">Included</span>
+                </button>
+                <button class="option-pill-btn opt-btn" data-type="wheels" data-name="21 Aerodynamic Midnight Jet" data-price="1800">
+                  <span class="pill-title">21" Aero Midnight Jet</span>
+                  <span class="pill-extra">Forged Lightweight</span>
+                  <span class="pill-extra" style="color: var(--neon-cyan);">+$1,800</span>
+                </button>
+                <button class="option-pill-btn opt-btn" data-type="wheels" data-name="22 M V-Spoke Racing Gold" data-price="3200">
+                  <span class="pill-title">22" M V-Spoke Gold</span>
+                  <span class="pill-extra">Center-Lock Style</span>
+                  <span class="pill-extra" style="color: var(--neon-cyan);">+$3,200</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 4: INTERIOR & COCKPIT -->
+            <div class="builder-step-card">
+              <div class="step-header">
+                <div class="step-num">4</div>
+                <h3 class="step-title">Cockpit & Leather Upholstery</h3>
+              </div>
+              <div class="options-pill-grid">
+                <button class="option-pill-btn opt-btn active" data-type="interior" data-name="Kyalami Orange / Black Merino" data-price="0">
+                  <span class="pill-title">Kyalami Orange</span>
+                  <span class="pill-extra">Extended Merino Leather</span>
+                  <span class="pill-extra" style="color: var(--neon-cyan);">Included</span>
+                </button>
+                <button class="option-pill-btn opt-btn" data-type="interior" data-name="Silverstone Perforated Merino" data-price="0">
+                  <span class="pill-title">Silverstone White</span>
+                  <span class="pill-extra">Perforated Luxury Leather</span>
+                  <span class="pill-extra" style="color: var(--neon-cyan);">Included</span>
+                </button>
+                <button class="option-pill-btn opt-btn" data-type="interior" data-name="Yas Marina Blue Alcantara" data-price="1500">
+                  <span class="pill-title">Yas Marina Alcantara</span>
+                  <span class="pill-extra">Yellow Accent Stitching</span>
+                  <span class="pill-extra" style="color: var(--neon-cyan);">+$1,500</span>
+                </button>
+                <button class="option-pill-btn opt-btn" data-type="interior" data-name="M Carbon Fiber Bucket Seats" data-price="3800">
+                  <span class="pill-title">M Carbon Buckets</span>
+                  <span class="pill-extra">Weight Savings -21 lbs</span>
+                  <span class="pill-extra" style="color: var(--neon-cyan);">+$3,800</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIP TEST DRIVE BOOKING SECTION -->
+    <section class="section" id="testdrive" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="test-drive-section">
+          <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+            <span class="section-badge" style="color: var(--neon-yellow);">Track & Highway Reserved</span>
+            <h2 class="section-title">Schedule Your <span class="gradient-text-sunset">VIP Test Drive</span></h2>
+            <p class="section-desc">Experience sheer driving pleasure firsthand on dynamic proving grounds with a certified BMW M Master Instructor.</p>
+          </div>
+
+          <form id="testDriveForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name *</label>
+                <input type="text" id="fullName" class="form-control" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="emailAddress" class="form-label">Email Address *</label>
+                <input type="email" id="emailAddress" class="form-control" placeholder="alex@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phoneNumber" class="form-label">Phone Number *</label>
+                <input type="tel" id="phoneNumber" class="form-control" placeholder="+1 (555) 000-0000" required>
+              </div>
+
+              <div class="form-group">
+                <label for="preferredModel" class="form-label">Selected BMW Vehicle *</label>
+                <select id="preferredModel" class="form-control" required>
+                  <option value="BMW M4 Competition Coupe">BMW M4 Competition Coupe (503 HP)</option>
+                  <option value="BMW i7 xDrive60 Sedan">BMW i7 xDrive60 Electric (536 HP)</option>
+                  <option value="BMW XM Savage Hybrid">BMW XM Savage Hybrid (738 HP)</option>
+                  <option value="BMW iX M60 SAV">BMW iX M60 Electric (610 HP)</option>
+                  <option value="BMW M8 Competition Gran Coupe">BMW M8 Gran Coupe (617 HP)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="showroomLocation" class="form-label">BMW Experience Showroom *</label>
+                <select id="showroomLocation" class="form-control" required>
+                  <option value="Munich Flagship - BMW Welt">Munich Flagship — BMW Welt (Germany)</option>
+                  <option value="Manhattan M Studio - New York">Manhattan M Studio — New York (USA)</option>
+                  <option value="Tokyo Bay Driving Center">Tokyo Bay Driving Center (Japan)</option>
+                  <option value="London Mayfair Brand Store">London Mayfair Brand Store (UK)</option>
+                  <option value="Dubai Autodrome Center">Dubai Autodrome Center (UAE)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="driveDate" class="form-label">Preferred Date & Time Window *</label>
+                <input type="datetime-local" id="driveDate" class="form-control" required>
+              </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2.5rem;">
+              <button type="submit" class="btn btn-primary" style="padding: 1rem 3rem; font-size: 1.05rem;">
+                Confirm VIP Test Drive Pass
+                <span>⚡</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS & DRIVER REVIEWS -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-badge">Pilot Testimonials</span>
+          <h2 class="section-title">Voices from the <span class="gradient-text-m">Cockpit</span></h2>
+          <p class="section-desc">Hear what performance enthusiasts and track drivers say about their journey.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+          <div style="background: var(--bg-card); border: 1px solid var(--glass-border); padding: 2rem; border-radius: 20px;">
+            <div style="color: var(--neon-yellow); margin-bottom: 0.8rem; font-size: 1.2rem;">★★★★★</div>
+            <p style="color: var(--text-muted); font-size: 0.95rem; font-style: italic; margin-bottom: 1.2rem;">
+              "The turn-in sharpness of the M4 Competition in Isle of Man Green is sublime. The active M differential makes you feel like you are fused to the asphalt on every hairpin."
+            </p>
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--grad-bmw-m); display: flex; align-items: center; justify-content: center; font-weight: 900; color: #fff;">MR</div>
+              <div>
+                <h4 style="color: #fff; font-size: 0.95rem;">Marcus Reynolds</h4>
+                <span style="color: var(--neon-cyan); font-size: 0.78rem;">Nürburgring Track Club Member</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="background: var(--bg-card); border: 1px solid var(--glass-border); padding: 2rem; border-radius: 20px;">
+            <div style="color: var(--neon-yellow); margin-bottom: 0.8rem; font-size: 1.2rem;">★★★★★</div>
+            <p style="color: var(--text-muted); font-size: 0.95rem; font-style: italic; margin-bottom: 1.2rem;">
+              "The i7's Theater Screen and silence at 80 MPH redefine what luxury travel is. You get relentless electric acceleration wrapped in modern lounge ambiance."
+            </p>
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--grad-electric); display: flex; align-items: center; justify-content: center; font-weight: 900; color: #07090e;">SL</div>
+              <div>
+                <h4 style="color: #fff; font-size: 0.95rem;">Sophia Laurent</h4>
+                <span style="color: var(--neon-green); font-size: 0.78rem;">Architect & Tech Founder</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="background: var(--bg-card); border: 1px solid var(--glass-border); padding: 2rem; border-radius: 20px;">
+            <div style="color: var(--neon-yellow); margin-bottom: 0.8rem; font-size: 1.2rem;">★★★★★</div>
+            <p style="color: var(--text-muted); font-size: 0.95rem; font-style: italic; margin-bottom: 1.2rem;">
+              "The XM Savage in Twilight Purple is an absolute statement. 738 horsepower on tap with instantaneous hybrid battery response is mind-bending."
+            </p>
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--grad-sunset); display: flex; align-items: center; justify-content: center; font-weight: 900; color: #fff;">EA</div>
+              <div>
+                <h4 style="color: #fff; font-size: 0.95rem;">Emir Al-Mansoori</h4>
+                <span style="color: var(--neon-magenta); font-size: 0.78rem;">Supercar Collector, Dubai</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- VIP BOOKING CONFIRMATION MODAL -->
+  <div class="modal-overlay" id="confirmationModal">
+    <div class="modal-card">
+      <div class="modal-check-icon">✓</div>
+      <h3 class="modal-title">VIP Pass Confirmed!</h3>
+      <p class="modal-text">Your exclusive track & test drive reservation has been locked in with BMW Concierge.</p>
+      
+      <div id="modalReservationDetails"></div>
+
+      <button id="modalCloseBtn" class="btn btn-electric" style="width: 100%;">
+        Close & Return to Studio
+      </button>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="m-brand-stripe"></div>
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-brand" style="margin-bottom: 0.8rem;">
+            <svg class="bmw-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="48" fill="#000" stroke="#ccc" stroke-width="2"/>
+              <path d="M50,50 L50,18 A32,32 0 0,1 82,50 Z" fill="#0066b1"/>
+              <path d="M50,50 L82,50 A32,32 0 0,1 50,82 Z" fill="#ffffff"/>
+              <path d="M50,50 L50,82 A32,32 0 0,1 18,50 Z" fill="#0066b1"/>
+              <path d="M50,50 L18,50 A32,32 0 0,1 50,18 Z" fill="#ffffff"/>
+            </svg>
+            <span class="brand-title" style="margin-left: 8px;">BMW</span>
+          </div>
+          <p>Sheer Driving Pleasure redefined through bold color expressions, motorsport precision, and electric intelligence.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Instagram">IG</a>
+            <a href="#" class="social-btn" aria-label="YouTube">YT</a>
+            <a href="#" class="social-btn" aria-label="X">𝕏</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="models.html">All Models</a></li>
+            <li><a href="models.html#artcars">BMW Art Cars</a></li>
+            <li><a href="experience.html">Build Your BMW</a></li>
+            <li><a href="#testdrive">Book Test Drive</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Performance</h4>
+          <ul class="footer-links">
+            <li><a href="#">BMW M Motorsport</a></li>
+            <li><a href="#">BMW i Electric</a></li>
+            <li><a href="#">BMW Individual</a></li>
+            <li><a href="#">Concept Vehicles</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="#">Find a Showroom</a></li>
+            <li><a href="#">Customer Care</a></li>
+            <li><a href="#">Financial Services</a></li>
+            <li><a href="#">Press & Media</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 BMW AG. Concept Prototype Showcase for demonstration purposes.</p>
+      <p>Crafted with HTML5, CSS3, & Modern Vanilla JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/customizer.js"></script>
+</body>
+</html>

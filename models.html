@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW Models & Art Heritage | The Vibrant Lineup</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- BMW M Heritage Stripe -->
+  <div class="m-brand-stripe"></div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand">
+        <!-- BMW SVG Roundel -->
+        <svg class="bmw-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" fill="#000000" stroke="#cccccc" stroke-width="2.5"/>
+          <circle cx="50" cy="50" r="45" fill="none" stroke="#777777" stroke-width="1"/>
+          <circle cx="50" cy="50" r="32" fill="#000000" stroke="#ffffff" stroke-width="1.5"/>
+          <path d="M50,50 L50,18 A32,32 0 0,1 82,50 Z" fill="#0066b1"/>
+          <path d="M50,50 L82,50 A32,32 0 0,1 50,82 Z" fill="#ffffff"/>
+          <path d="M50,50 L50,82 A32,32 0 0,1 18,50 Z" fill="#0066b1"/>
+          <path d="M50,50 L18,50 A32,32 0 0,1 50,18 Z" fill="#ffffff"/>
+          <text x="30" y="16" fill="#ffffff" font-size="11" font-family="'Segoe UI', Arial, sans-serif" font-weight="900">B</text>
+          <text x="45" y="13" fill="#ffffff" font-size="11" font-family="'Segoe UI', Arial, sans-serif" font-weight="900">M</text>
+          <text x="63" y="16" fill="#ffffff" font-size="11" font-family="'Segoe UI', Arial, sans-serif" font-weight="900">W</text>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-title">BMW</span>
+          <span class="brand-subtitle">Vibrant Motion</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="models.html" class="nav-link active">Models & Heritage</a></li>
+        <li><a href="experience.html" class="nav-link">Build & Drive</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="experience.html" class="btn btn-electric btn-sm">Configure M</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="section" style="padding-bottom: 2rem;">
+      <div class="container text-center" style="text-align: center;">
+        <span class="section-badge">Masterpiece Fleet</span>
+        <h1 class="section-title">Explore the <span class="gradient-text-m">Fleet</span> of Tomorrow</h1>
+        <p class="section-desc" style="max-width: 650px; margin: 0 auto;">
+          Whether craving track-honed internal combustion thrills or silence-shattering electric momentum, discover BMW vehicles crafted with unbridled color and character.
+        </p>
+      </div>
+    </section>
+
+    <!-- Filterable Models Grid Section -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <!-- Filter Tabs -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All Vehicles</button>
+          <button class="filter-btn" data-filter="m-power">M Performance</button>
+          <button class="filter-btn" data-filter="electric">BMW i Electric</button>
+          <button class="filter-btn" data-filter="sedan">Sedans & Coupes</button>
+          <button class="filter-btn" data-filter="sav">SAV / Sports Activity</button>
+        </div>
+
+        <!-- Models Grid -->
+        <div class="models-grid" id="modelsGrid">
+          
+          <!-- Card 1: M4 Competition -->
+          <article class="model-card" data-category="m-power sedan">
+            <div class="model-img-wrap" style="background: radial-gradient(circle, rgba(229, 242, 0, 0.15) 0%, rgba(11, 15, 25, 0.9) 80%);">
+              <span class="model-badge badge-m">M POWER</span>
+              <svg class="model-img" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="300" cy="190" rx="270" ry="12" fill="#000" opacity="0.6"/>
+                <!-- Car Body -->
+                <path d="M50,165 C60,140 80,125 110,120 L210,118 L270,70 C290,56 340,52 410,52 L470,52 C510,52 540,75 560,110 L575,130 C585,145 585,160 575,172 L500,175 L100,175 Z" fill="#E5F200"/>
+                <path d="M275,76 L400,64 L465,64 C495,64 525,82 545,112 L410,115 L285,115 Z" fill="#14213d"/>
+                <!-- Wheels -->
+                <circle cx="150" cy="165" r="35" fill="#1a1f2c" stroke="#444" stroke-width="3"/>
+                <circle cx="150" cy="165" r="22" fill="#d4d4d8"/>
+                <circle cx="485" cy="165" r="35" fill="#1a1f2c" stroke="#444" stroke-width="3"/>
+                <circle cx="485" cy="165" r="22" fill="#d4d4d8"/>
+              </svg>
+            </div>
+            <div class="model-info">
+              <div class="model-title-row">
+                <h3 class="model-title">BMW M4 Competition</h3>
+                <span class="model-price">$82,200</span>
+              </div>
+              <p class="model-subtitle">High-revving 3.0L M TwinPower Turbo Inline-6</p>
+              <div class="model-stats-row">
+                <div class="stat-item">
+                  <div class="val">503 HP</div>
+                  <div class="lbl">Output</div>
+                </div>
+                <div class="stat-item">
+                  <div class="val">3.4s</div>
+                  <div class="lbl">0-60 MPH</div>
+                </div>
+                <div class="stat-item">
+                  <div class="val">180 MPH</div>
+                  <div class="lbl">Top Speed</div>
+                </div>
+              </div>
+              <div class="model-actions">
+                <a href="experience.html" class="btn btn-primary btn-sm" style="flex: 1;">Configure M4</a>
+                <a href="experience.html#testdrive" class="btn btn-glass btn-sm">Test Drive</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: BMW i7 xDrive60 -->
+          <article class="model-card" data-category="electric sedan">
+            <div class="model-img-wrap" style="background: radial-gradient(circle, rgba(0, 242, 254, 0.15) 0%, rgba(11, 15, 25, 0.9) 80%);">
+              <span class="model-badge badge-electric">ALL-ELECTRIC</span>
+              <svg class="model-img" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="300" cy="190" rx="270" ry="12" fill="#000" opacity="0.6"/>
+                <!-- Car Body -->
+                <path d="M40,165 C50,135 75,120 105,115 L190,112 L245,62 C270,48 320,45 420,45 L480,45 C525,45 555,70 575,105 L585,130 C590,148 580,168 565,172 L500,175 L90,175 Z" fill="#00f2fe"/>
+                <path d="M255,70 L410,58 L475,58 C505,58 535,76 555,106 L420,108 L265,108 Z" fill="#0b1329"/>
+                <!-- Wheels -->
+                <circle cx="140" cy="165" r="35" fill="#1a1f2c" stroke="#00f2fe" stroke-width="2"/>
+                <circle cx="140" cy="165" r="22" fill="#94a3b8"/>
+                <circle cx="490" cy="165" r="35" fill="#1a1f2c" stroke="#00f2fe" stroke-width="2"/>
+                <circle cx="490" cy="165" r="22" fill="#94a3b8"/>
+              </svg>
+            </div>
+            <div class="model-info">
+              <div class="model-title-row">
+                <h3 class="model-title">BMW i7 xDrive60</h3>
+                <span class="model-price">$105,700</span>
+              </div>
+              <p class="model-subtitle">Dual Electric Motors with 31.3" BMW Theater Screen</p>
+              <div class="model-stats-row">
+                <div class="stat-item">
+                  <div class="val">536 HP</div>
+                  <div class="lbl">Output</div>
+                </div>
+                <div class="stat-item">
+                  <div class="val">318 MI</div>
+                  <div class="lbl">Range</div>
+                </div>
+                <div class="stat-item">
+                  <div class="val">4.5s</div>
+                  <div class="lbl">0-60 MPH</div>
+                </div>
+              </div>
+              <div class="model-actions">
+                <a href="experience.html" class="btn btn-electric btn-sm" style="flex: 1;">Configure i7</a>
+                <a href="experience.html#testdrive" class="btn btn-glass btn-sm">Test Drive</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: BMW XM Label Red -->
+          <article class="model-card" data-category="m-power sav">
+            <div class="model-img-wrap" style="background: radial-gradient(circle, rgba(226, 39, 24, 0.18) 0%, rgba(11, 15, 25, 0.9) 80%);">
+              <span class="model-badge badge-m">M HYBRID SAV</span>
+              <svg class="model-img" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="300" cy="190" rx="270" ry="12" fill="#000" opacity="0.6"/>
+                <!-- SAV Body -->
+                <path d="M45,170 C50,125 70,105 110,100 L200,98 L240,48 C260,35 300,32 400,32 L490,32 C530,32 555,50 570,85 L585,120 C590,145 580,168 565,172 L500,175 L90,175 Z" fill="#D31027"/>
+                <path d="M250,56 L395,44 L485,44 C515,44 540,62 555,88 L420,92 L260,92 Z" fill="#1f1115"/>
+                <!-- Wheels 22" -->
+                <circle cx="145" cy="165" r="38" fill="#141416" stroke="#ff2a54" stroke-width="2"/>
+                <circle cx="145" cy="165" r="24" fill="#3f3f46"/>
+                <circle cx="495" cy="165" r="38" fill="#141416" stroke="#ff2a54" stroke-width="2"/>
+                <circle cx="495" cy="165" r="24" fill="#3f3f46"/>
+              </svg>
+            </div>
+            <div class="model-info">
+              <div class="model-title-row">
+                <h3 class="model-title">BMW XM Savage</h3>
+                <span class="model-price">$159,000</span>
+              </div>
+              <p class="model-subtitle">M TwinPower Turbo V8 Electrified Powerhouse</p>
+              <div class="model-stats-row">
+                <div class="stat-item">
+                  <div class="val">738 HP</div>
+                  <div class="lbl">Output</div>
+                </div>
+                <div class="stat-item">
+                  <div class="val">3.7s</div>
+                  <div class="lbl">0-60 MPH</div>
+                </div>
+                <div class="stat-item">
+                  <div class="val">738 LB-FT</div>
+                  <div class="lbl">Torque</div>
+                </div>
+              </div>
+              <div class="model-actions">
+                <a href="experience.html" class="btn btn-primary btn-sm" style="flex: 1;">Configure XM</a>
+                <a href="experience.html#testdrive" class="btn btn-glass btn-sm">Test Drive</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: BMW iX M60 -->
+          <article class="model-card" data-category="electric sav">
+            <div class="model-img-wrap" style="background: radial-gradient(circle, rgba(138, 43, 226, 0.2) 0%, rgba(11, 15, 25, 0.9) 80%);">
+              <span class="model-badge badge-electric">ELECTRIC SAV</span>
+              <svg class="model-img" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="300" cy="190" rx="270" ry="12" fill="#000" opacity="0.6"/>
+                <path d="M45,168 C50,125 75,108 115,102 L210,100 L250,52 C270,38 310,36 410,36 L500,36 C535,36 560,55 572,90 L585,125 C588,148 578,168 565,172 L500,175 L90,175 Z" fill="#6B1182"/>
+                <path d="M260,60 L405,48 L495,48 C520,48 545,64 558,92 L425,95 L270,95 Z" fill="#1b102b"/>
+                <circle cx="150" cy="165" r="37" fill="#111" stroke="#c026d3" stroke-width="2"/>
+                <circle cx="150" cy="165" r="23" fill="#888"/>
+                <circle cx="495" cy="165" r="37" fill="#111" stroke="#c026d3" stroke-width="2"/>
+                <circle cx="495" cy="165" r="23" fill="#888"/>
+              </svg>
+            </div>
+            <div class="model-info">
+              <div class="model-title-row">
+                <h3 class="model-title">BMW iX M60</h3>
+                <span class="model-price">$111,500</span>
+              </div>
+              <p class="model-subtitle">All-Electric Sports Activity Vehicle with Shy Tech</p>
+              <div class="model-stats-row">
+                <div class="stat-item">
+                  <div class="val">610 HP</div>
+                  <div class="lbl">Output</div>
+                </div>
+                <div class="stat-item">
+                  <div class="val">296 MI</div>
+                  <div class="lbl">Range</div>
+                </div>
+                <div class="stat-item">
+                  <div class="val">3.6s</div>
+                  <div class="lbl">0-60 MPH</div>
+                </div>
+              </div>
+              <div class="model-actions">
+                <a href="experience.html" class="btn btn-electric btn-sm" style="flex: 1;">Configure iX</a>
+                <a href="experience.html#testdrive" class="btn btn-glass btn-sm">Test Drive</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: BMW M8 Competition Gran Coupe -->
+          <article class="model-card" data-category="m-power sedan">
+            <div class="model-img-wrap" style="background: radial-gradient(circle, rgba(15, 138, 95, 0.2) 0%, rgba(11, 15, 25, 0.9) 80%);">
+              <span class="model-badge badge-m">V8 TWIN-TURBO</span>
+              <svg class="model-img" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="300" cy="190" rx="270" ry="12" fill="#000" opacity="0.6"/>
+                <path d="M40,165 C50,135 75,120 110,115 L215,112 L280,62 C300,48 350,45 430,45 L500,45 C540,45 565,68 580,105 L590,130 C595,148 585,168 570,172 L500,175 L90,175 Z" fill="#0F8A5F"/>
+                <path d="M290,70 L425,58 L495,58 C525,58 550,76 565,106 L430,108 L295,108 Z" fill="#0c1e17"/>
+                <circle cx="150" cy="165" r="35" fill="#111" stroke="#00ff87" stroke-width="2"/>
+                <circle cx="150" cy="165" r="22" fill="#d4d4d8"/>
+                <circle cx="495" cy="165" r="35" fill="#111" stroke="#00ff87" stroke-width="2"/>
+                <circle cx="495" cy="165" r="22" fill="#d4d4d8"/>
+              </svg>
+            </div>
+            <div class="model-info">
+              <div class="model-title-row">
+                <h3 class="model-title">BMW M8 Gran Coupe</h3>
+                <span class="model-price">$138,800</span>
+              </div>
+              <p class="model-subtitle">4.4-Liter BMW M TwinPower Turbo V8 Flagship</p>
+              <div class="model-stats-row">
+                <div class="stat-item">
+                  <div class="val">617 HP</div>
+                  <div class="lbl">Output</div>
+                </div>
+                <div class="stat-item">
+                  <div class="val">3.0s</div>
+                  <div class="lbl">0-60 MPH</div>
+                </div>
+                <div class="stat-item">
+                  <div class="val">553 LB-FT</div>
+                  <div class="lbl">Torque</div>
+                </div>
+              </div>
+              <div class="model-actions">
+                <a href="experience.html" class="btn btn-primary btn-sm" style="flex: 1;">Configure M8</a>
+                <a href="experience.html#testdrive" class="btn btn-glass btn-sm">Test Drive</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: BMW i4 M50 -->
+          <article class="model-card" data-category="electric sedan m-power">
+            <div class="model-img-wrap" style="background: radial-gradient(circle, rgba(255, 94, 19, 0.2) 0%, rgba(11, 15, 25, 0.9) 80%);">
+              <span class="model-badge badge-electric">M ELECTRIC</span>
+              <svg class="model-img" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="300" cy="190" rx="270" ry="12" fill="#000" opacity="0.6"/>
+                <path d="M45,165 C55,138 80,122 115,118 L215,115 L275,66 C295,52 345,48 420,48 L480,48 C520,48 550,72 568,108 L580,130 C588,146 580,165 568,172 L500,175 L95,175 Z" fill="#FF5E13"/>
+                <path d="M285,74 L415,60 L475,60 C505,60 535,78 550,110 L418,112 L290,112 Z" fill="#2b140b"/>
+                <circle cx="150" cy="165" r="35" fill="#111" stroke="#ff7b00" stroke-width="2"/>
+                <circle cx="150" cy="165" r="22" fill="#d4d4d8"/>
+                <circle cx="490" cy="165" r="35" fill="#111" stroke="#ff7b00" stroke-width="2"/>
+                <circle cx="490" cy="165" r="22" fill="#d4d4d8"/>
+              </svg>
+            </div>
+            <div class="model-info">
+              <div class="model-title-row">
+                <h3 class="model-title">BMW i4 M50</h3>
+                <span class="model-price">$69,700</span>
+              </div>
+              <p class="model-subtitle">First Pure-Electric Performance Gran Coupe by M</p>
+              <div class="model-stats-row">
+                <div class="stat-item">
+                  <div class="val">536 HP</div>
+                  <div class="lbl">Output</div>
+                </div>
+                <div class="stat-item">
+                  <div class="val">3.7s</div>
+                  <div class="lbl">0-60 MPH</div>
+                </div>
+                <div class="stat-item">
+                  <div class="val">271 MI</div>
+                  <div class="lbl">Range</div>
+                </div>
+              </div>
+              <div class="model-actions">
+                <a href="experience.html" class="btn btn-electric btn-sm" style="flex: 1;">Configure i4</a>
+                <a href="experience.html#testdrive" class="btn btn-glass btn-sm">Test Drive</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BMW ART CARS SECTION -->
+    <section class="art-car-section" id="artcars">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-badge" style="color: var(--neon-magenta);">Rolling Canvas Heritage</span>
+          <h2 class="section-title">The Legendary <span class="gradient-text-sunset">BMW Art Cars</span></h2>
+          <p class="section-desc">
+            Since 1975, BMW has united world-renowned visionary artists with high-speed endurance motorsport to transform racing legends into rolling works of modern art.
+          </p>
+        </div>
+
+        <div class="art-cards-grid">
+          <!-- Warhol -->
+          <article class="art-card">
+            <div class="art-canvas-preview warhol">
+              <div style="font-size: 2.8rem; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));">🎨 1979</div>
+            </div>
+            <div class="art-card-details">
+              <span class="art-artist">Andy Warhol</span>
+              <h3 class="art-car-name">BMW M1 Group 4 (1979)</h3>
+              <p class="art-desc">
+                Painted by hand in under 28 minutes. Warhol applied 6 kilos of vivid paint: <em>"I attempted to show speed as a visual; when a car is going fast, all lines and colors become a blur."</em> Placed 6th overall at 24 Hours of Le Mans.
+              </p>
+            </div>
+          </article>
+
+          <!-- Koons -->
+          <article class="art-card">
+            <div class="art-canvas-preview koons">
+              <div style="font-size: 2.8rem; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));">⚡ 2010</div>
+            </div>
+            <div class="art-card-details">
+              <span class="art-artist">Jeff Koons</span>
+              <h3 class="art-car-name">BMW M3 GT2 (2010)</h3>
+              <p class="art-desc">
+                Exploding with cosmic contrast and vivid light trails, Koons drew inspiration from supersonic motion, debris bursts, and raw horsepower to manifest pure kinetic energy on the circuit.
+              </p>
+            </div>
+          </article>
+
+          <!-- Calder -->
+          <article class="art-card">
+            <div class="art-canvas-preview calder">
+              <div style="font-size: 2.8rem; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));">🏎️ 1975</div>
+            </div>
+            <div class="art-card-details">
+              <span class="art-artist">Alexander Calder</span>
+              <h3 class="art-car-name">BMW 3.0 CSL (1975)</h3>
+              <p class="art-desc">
+                The spark that ignited the entire Art Car phenomenon. American sculptor Calder infused the muscular "Batmobile" CSL with primary red, blue, and yellow geometric blocks that energized Le Mans spectators.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BMW INDIVIDUAL PALETTE SHOWCASE -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-badge">Bespoke Finishes</span>
+          <h2 class="section-title">BMW <span class="gradient-text-aurora">Individual</span> Paint Studio</h2>
+          <p class="section-desc">More than 150 rare paint formulas crafted in Dingolfing and Spartanburg with multilayered mica pigments.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem;">
+          <div style="background: var(--bg-card); border: 1px solid var(--glass-border); padding: 1.5rem; border-radius: 18px; text-align: center;">
+            <div style="width: 50px; height: 50px; border-radius: 50%; background: #6B1182; margin: 0 auto 1rem auto; box-shadow: 0 0 15px #6B1182;"></div>
+            <h4 style="color: #fff; font-size: 1rem;">Twilight Purple</h4>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Metallic • 3-Stage</span>
+          </div>
+
+          <div style="background: var(--bg-card); border: 1px solid var(--glass-border); padding: 1.5rem; border-radius: 18px; text-align: center;">
+            <div style="width: 50px; height: 50px; border-radius: 50%; background: #0F8A5F; margin: 0 auto 1rem auto; box-shadow: 0 0 15px #0F8A5F;"></div>
+            <h4 style="color: #fff; font-size: 1rem;">Isle of Man Green</h4>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">M Exclusive • Metallic</span>
+          </div>
+
+          <div style="background: var(--bg-card); border: 1px solid var(--glass-border); padding: 1.5rem; border-radius: 18px; text-align: center;">
+            <div style="width: 50px; height: 50px; border-radius: 50%; background: #FF5E13; margin: 0 auto 1rem auto; box-shadow: 0 0 15px #FF5E13;"></div>
+            <h4 style="color: #fff; font-size: 1rem;">Fire Orange III</h4>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">GTS Heritage • Gloss</span>
+          </div>
+
+          <div style="background: var(--bg-card); border: 1px solid var(--glass-border); padding: 1.5rem; border-radius: 18px; text-align: center;">
+            <div style="width: 50px; height: 50px; border-radius: 50%; background: #0066B1; margin: 0 auto 1rem auto; box-shadow: 0 0 15px #0066B1;"></div>
+            <h4 style="color: #fff; font-size: 1rem;">Marina Bay Blue</h4>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">High Reflective • Metallic</span>
+          </div>
+
+          <div style="background: var(--bg-card); border: 1px solid var(--glass-border); padding: 1.5rem; border-radius: 18px; text-align: center;">
+            <div style="width: 50px; height: 50px; border-radius: 50%; background: #E5F200; margin: 0 auto 1rem auto; box-shadow: 0 0 15px #E5F200;"></div>
+            <h4 style="color: #fff; font-size: 1rem;">Sao Paulo Yellow</h4>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Non-Metallic • Neon Solid</span>
+          </div>
+
+          <div style="background: var(--bg-card); border: 1px solid var(--glass-border); padding: 1.5rem; border-radius: 18px; text-align: center;">
+            <div style="width: 50px; height: 50px; border-radius: 50%; background: #555B66; margin: 0 auto 1rem auto; box-shadow: 0 0 15px #555B66;"></div>
+            <h4 style="color: #fff; font-size: 1rem;">Frozen Pure Grey</h4>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Silky Matte Finish</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="m-brand-stripe"></div>
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-brand" style="margin-bottom: 0.8rem;">
+            <svg class="bmw-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="48" fill="#000" stroke="#ccc" stroke-width="2"/>
+              <path d="M50,50 L50,18 A32,32 0 0,1 82,50 Z" fill="#0066b1"/>
+              <path d="M50,50 L82,50 A32,32 0 0,1 50,82 Z" fill="#ffffff"/>
+              <path d="M50,50 L50,82 A32,32 0 0,1 18,50 Z" fill="#0066b1"/>
+              <path d="M50,50 L18,50 A32,32 0 0,1 50,18 Z" fill="#ffffff"/>
+            </svg>
+            <span class="brand-title" style="margin-left: 8px;">BMW</span>
+          </div>
+          <p>Sheer Driving Pleasure redefined through bold color expressions, motorsport precision, and electric intelligence.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Instagram">IG</a>
+            <a href="#" class="social-btn" aria-label="YouTube">YT</a>
+            <a href="#" class="social-btn" aria-label="X">𝕏</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="models.html">All Models</a></li>
+            <li><a href="#artcars">BMW Art Cars</a></li>
+            <li><a href="experience.html">Build Your BMW</a></li>
+            <li><a href="experience.html#testdrive">Book Test Drive</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Performance</h4>
+          <ul class="footer-links">
+            <li><a href="#">BMW M Motorsport</a></li>
+            <li><a href="#">BMW i Electric</a></li>
+            <li><a href="#">BMW Individual</a></li>
+            <li><a href="#">Concept Vehicles</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="#">Find a Showroom</a></li>
+            <li><a href="#">Customer Care</a></li>
+            <li><a href="#">Financial Services</a></li>
+            <li><a href="#">Press & Media</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 BMW AG. Concept Prototype Showcase for demonstration purposes.</p>
+      <p>Crafted with HTML5, CSS3, & Modern Vanilla JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/customizer.js"></script>
+</body>
+</html>

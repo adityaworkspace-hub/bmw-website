@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW Vibrant | The Art of Ultimate Performance</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- BMW M Heritage Stripe -->
+  <div class="m-brand-stripe"></div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand">
+        <!-- Official BMW SVG Roundel -->
+        <svg class="bmw-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" fill="#000000" stroke="#cccccc" stroke-width="2.5"/>
+          <circle cx="50" cy="50" r="45" fill="none" stroke="#777777" stroke-width="1"/>
+          <!-- Inner circle -->
+          <circle cx="50" cy="50" r="32" fill="#000000" stroke="#ffffff" stroke-width="1.5"/>
+          <!-- Quadrants -->
+          <path d="M50,50 L50,18 A32,32 0 0,1 82,50 Z" fill="#0066b1"/>
+          <path d="M50,50 L82,50 A32,32 0 0,1 50,82 Z" fill="#ffffff"/>
+          <path d="M50,50 L50,82 A32,32 0 0,1 18,50 Z" fill="#0066b1"/>
+          <path d="M50,50 L18,50 A32,32 0 0,1 50,18 Z" fill="#ffffff"/>
+          <!-- Letters B M W -->
+          <text x="30" y="16" fill="#ffffff" font-size="11" font-family="'Segoe UI', Arial, sans-serif" font-weight="900">B</text>
+          <text x="45" y="13" fill="#ffffff" font-size="11" font-family="'Segoe UI', Arial, sans-serif" font-weight="900">M</text>
+          <text x="63" y="16" fill="#ffffff" font-size="11" font-family="'Segoe UI', Arial, sans-serif" font-weight="900">W</text>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-title">BMW</span>
+          <span class="brand-subtitle">Vibrant Motion</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="models.html" class="nav-link">Models & Heritage</a></li>
+        <li><a href="experience.html" class="nav-link">Build & Drive</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="experience.html" class="btn btn-electric btn-sm">Configure M</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero-section">
+      <div class="hero-glow-blob blob-1"></div>
+      <div class="hero-glow-blob blob-2"></div>
+
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>Next-Gen Color & Dynamics</span>
+        </div>
+
+        <h1 class="hero-title">
+          Feel the <span class="gradient-text-m">Pulse</span> of <span class="gradient-text-electric">Pure Power</span>
+        </h1>
+
+        <p class="hero-lead">
+          Step into a vibrant realm where legendary M Motorsport precision meets electric future-tech. Customize your finish, fire up the twin-turbo acoustics, and ignite the road.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="models.html" class="btn btn-primary">
+            Explore All Models
+            <span>→</span>
+          </a>
+          <button id="engineSoundBtn" class="btn btn-sound">
+            <span>⚡</span> Start M Twin-Turbo Engine
+          </button>
+        </div>
+
+        <!-- Interactive Color Customizer Studio -->
+        <div class="studio-container">
+          <div class="studio-header">
+            <div>
+              <span class="studio-badge">Dynamic Paint Lab</span>
+              <h2 class="studio-car-name">BMW M4 Competition Coupe</h2>
+            </div>
+            <div class="studio-controls-top">
+              <span class="color-indicator-text">Active Finish: <span id="selectedColorName">Sao Paulo Yellow</span> (<span id="selectedColorHex">#E5F200</span>)</span>
+            </div>
+          </div>
+
+          <!-- Car Stage with SVG & Underglow -->
+          <div class="car-stage">
+            <div class="car-underglow"></div>
+
+            <div class="car-svg-wrap">
+              <!-- High-Fidelity Vector Car Silhouette -->
+              <svg class="car-svg-graphic" viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <!-- Gradient for windshield -->
+                  <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#14213d" stop-opacity="0.9"/>
+                    <stop offset="50%" stop-color="#00f2fe" stop-opacity="0.3"/>
+                    <stop offset="100%" stop-color="#0a0e17" stop-opacity="0.95"/>
+                  </linearGradient>
+                  <!-- Headlight glow -->
+                  <linearGradient id="laserLight" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.9"/>
+                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0.2"/>
+                  </linearGradient>
+                  <!-- Taillight glow -->
+                  <linearGradient id="tailLight" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#ff0044" stop-opacity="0.95"/>
+                    <stop offset="100%" stop-color="#ff5e36" stop-opacity="0.8"/>
+                  </linearGradient>
+                </defs>
+
+                <!-- Ground Shadow -->
+                <ellipse cx="450" cy="275" rx="410" ry="18" fill="#000000" opacity="0.6"/>
+
+                <!-- Exhaust Quad Pipes -->
+                <rect x="75" y="240" width="22" height="12" rx="4" fill="#555" stroke="#999" stroke-width="1.5"/>
+                <rect x="62" y="244" width="20" height="10" rx="3" fill="#222"/>
+
+                <!-- Main Car Body Panels (Class: car-paint) -->
+                <!-- Rear Bumper & Quarter Panel -->
+                <path class="car-paint" d="M78,245 C80,210 100,185 140,180 L235,178 C250,178 280,180 300,195 L340,205 L600,205 C625,190 655,185 680,185 L760,190 C800,195 830,225 835,252 L780,260 L140,260 Z" fill="#E5F200"/>
+
+                <!-- Fastback Roof & Pillars -->
+                <path class="car-paint" d="M225,180 L320,115 C345,98 390,92 470,92 L570,92 C625,92 680,120 715,160 L730,185 L600,190 L330,190 Z" fill="#E5F200"/>
+
+                <!-- Aerodynamic Hood & Front Fascia -->
+                <path class="car-paint" d="M680,185 L815,200 C835,205 850,220 852,240 L840,256 L770,258 L710,185 Z" fill="#E5F200"/>
+
+                <!-- Carbon Fiber Roof Top -->
+                <path d="M330,110 C355,96 395,90 470,90 L570,90 C610,90 650,108 675,130 L665,133 C645,115 605,98 565,98 L470,98 C400,98 360,104 340,115 Z" fill="#18181b" stroke="#333" stroke-width="1"/>
+
+                <!-- Greenhouse Glasshouse / Windows -->
+                <path d="M335,118 L465,102 L565,102 C615,102 655,128 680,165 L590,168 L485,168 L360,168 Z" fill="url(#glassGrad)" stroke="#1a2333" stroke-width="2"/>
+                <line x1="480" y1="102" x2="480" y2="168" stroke="#111827" stroke-width="4"/>
+                <!-- Hofmeister Kink Trim -->
+                <path d="M345,155 C340,140 348,128 365,122" fill="none" stroke="#00f2fe" stroke-width="2"/>
+
+                <!-- Sleek Laser Headlights -->
+                <polygon points="805,212 845,225 835,235 795,224" fill="url(#laserLight)"/>
+                <polygon points="808,215 840,226 832,232 800,223" fill="#ffffff" filter="drop-shadow(0 0 8px #00f2fe)"/>
+
+                <!-- L-Shaped M OLED Taillights -->
+                <path d="M85,208 L125,208 C135,208 140,215 135,222 L92,222 Z" fill="url(#tailLight)" filter="drop-shadow(0 0 6px #ff0044)"/>
+
+                <!-- Side Aerodynamic Crease / M Air Breather -->
+                <path d="M230,195 Q500,215 750,212" fill="none" stroke="#000000" stroke-width="3" opacity="0.35"/>
+                <path d="M250,198 Q500,218 745,215" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+                <path d="M640,205 L625,235 L618,235 L632,205 Z" fill="#111" stroke="#333" stroke-width="1"/>
+
+                <!-- M Aerodynamic Wing Mirror -->
+                <path d="M575,160 C585,155 605,155 615,165 C605,172 580,172 575,160 Z" fill="#111" stroke="#444" stroke-width="1.5"/>
+
+                <!-- REAR WHEEL ASSEMBLY -->
+                <g transform="translate(195, 245)">
+                  <!-- Wheel Arch / Well -->
+                  <circle cx="0" cy="0" r="58" fill="#090d14"/>
+                  <!-- Tire -->
+                  <circle cx="0" cy="0" r="54" fill="#181b22" stroke="#2c3240" stroke-width="4"/>
+                  <!-- M Sport Brake Disc Rotor -->
+                  <circle cx="0" cy="0" r="38" fill="#5a6275" stroke="#8892b0" stroke-width="1.5" stroke-dasharray="3,3"/>
+                  <!-- Red M Brake Caliper -->
+                  <rect x="-35" y="-20" width="16" height="24" rx="4" fill="#e22718"/>
+                  <text x="-32" y="-4" fill="#fff" font-size="8" font-weight="900" font-family="sans-serif">M</text>
+                  <!-- 20" Bicolor Alloy Rim Spokes -->
+                  <circle cx="0" cy="0" r="36" fill="none" stroke="#d4d4d8" stroke-width="3"/>
+                  <circle cx="0" cy="0" r="14" fill="#0c0e14" stroke="#ffffff" stroke-width="2"/>
+                  <!-- 5 Twin-Spokes -->
+                  <line x1="0" y1="0" x2="0" y2="-36" stroke="#e4e4e7" stroke-width="3"/>
+                  <line x1="0" y1="0" x2="34" y2="-11" stroke="#e4e4e7" stroke-width="3"/>
+                  <line x1="0" y1="0" x2="21" y2="29" stroke="#e4e4e7" stroke-width="3"/>
+                  <line x1="0" y1="0" x2="-21" y2="29" stroke="#e4e4e7" stroke-width="3"/>
+                  <line x1="0" y1="0" x2="-34" y2="-11" stroke="#e4e4e7" stroke-width="3"/>
+                  <!-- BMW Center Hubcap -->
+                  <circle cx="0" cy="0" r="7" fill="#0066b1"/>
+                </g>
+
+                <!-- FRONT WHEEL ASSEMBLY -->
+                <g transform="translate(710, 245)">
+                  <!-- Wheel Arch / Well -->
+                  <circle cx="0" cy="0" r="58" fill="#090d14"/>
+                  <!-- Tire -->
+                  <circle cx="0" cy="0" r="54" fill="#181b22" stroke="#2c3240" stroke-width="4"/>
+                  <!-- M Sport Brake Disc Rotor -->
+                  <circle cx="0" cy="0" r="38" fill="#5a6275" stroke="#8892b0" stroke-width="1.5" stroke-dasharray="3,3"/>
+                  <!-- Red M Brake Caliper -->
+                  <rect x="-35" y="-20" width="16" height="24" rx="4" fill="#e22718"/>
+                  <text x="-32" y="-4" fill="#fff" font-size="8" font-weight="900" font-family="sans-serif">M</text>
+                  <!-- 19" Bicolor Alloy Rim Spokes -->
+                  <circle cx="0" cy="0" r="36" fill="none" stroke="#d4d4d8" stroke-width="3"/>
+                  <circle cx="0" cy="0" r="14" fill="#0c0e14" stroke="#ffffff" stroke-width="2"/>
+                  <!-- 5 Twin-Spokes -->
+                  <line x1="0" y1="0" x2="0" y2="-36" stroke="#e4e4e7" stroke-width="3"/>
+                  <line x1="0" y1="0" x2="34" y2="-11" stroke="#e4e4e7" stroke-width="3"/>
+                  <line x1="0" y1="0" x2="21" y2="29" stroke="#e4e4e7" stroke-width="3"/>
+                  <line x1="0" y1="0" x2="-21" y2="29" stroke="#e4e4e7" stroke-width="3"/>
+                  <line x1="0" y1="0" x2="-34" y2="-11" stroke="#e4e4e7" stroke-width="3"/>
+                  <!-- BMW Center Hubcap -->
+                  <circle cx="0" cy="0" r="7" fill="#0066b1"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Color Swatch Selector -->
+          <div class="color-picker-bar">
+            <div class="swatch-group">
+              <button class="swatch-btn active" data-color="#E5F200" data-glow="#f5ee38" data-name="Sao Paulo Yellow" style="background: #E5F200;" title="Sao Paulo Yellow"></button>
+              <button class="swatch-btn" data-color="#0F8A5F" data-glow="#00ff87" data-name="Isle of Man Green" style="background: #0F8A5F;" title="Isle of Man Green"></button>
+              <button class="swatch-btn" data-color="#0066B1" data-glow="#00f2fe" data-name="Marina Bay Blue" style="background: #0066B1;" title="Marina Bay Blue"></button>
+              <button class="swatch-btn" data-color="#D31027" data-glow="#ff2a54" data-name="Toronto Red" style="background: #D31027;" title="Toronto Red"></button>
+              <button class="swatch-btn" data-color="#6B1182" data-glow="#c026d3" data-name="Twilight Purple" style="background: #6B1182;" title="Twilight Purple"></button>
+              <button class="swatch-btn" data-color="#FF5E13" data-glow="#ff7b00" data-name="Fire Orange" style="background: #FF5E13;" title="Fire Orange"></button>
+              <button class="swatch-btn" data-color="#555B66" data-glow="#94a3b8" data-name="Frozen Pure Grey" style="background: #555B66;" title="Frozen Pure Grey"></button>
+            </div>
+          </div>
+
+          <!-- Quick Specs Chips -->
+          <div class="quick-specs-grid">
+            <div class="spec-chip">
+              <div class="spec-value gradient-text-m">503 HP</div>
+              <div class="spec-label">M TwinPower Turbo</div>
+            </div>
+            <div class="spec-chip">
+              <div class="spec-value gradient-text-electric">3.4 SEC</div>
+              <div class="spec-label">0-60 MPH Acceleration</div>
+            </div>
+            <div class="spec-chip">
+              <div class="spec-value gradient-text-sunset">479 LB-FT</div>
+              <div class="spec-label">Torque Curve</div>
+            </div>
+            <div class="spec-chip">
+              <div class="spec-value gradient-text-aurora">50 / 50</div>
+              <div class="spec-label">Weight Distribution</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-badge">Engineering Supremacy</span>
+          <h2 class="section-title">The Three Pillars of <span class="gradient-text-electric">BMW Innovation</span></h2>
+          <p class="section-desc">From the high-revving racetrack asphalt to zero-emission grand touring, experience automotive artistry engineered without compromise.</p>
+        </div>
+
+        <div class="feature-grid">
+          <!-- Card 1 -->
+          <div class="feature-card" style="--card-gradient: var(--grad-bmw-m); --card-glow: rgba(226,39,24,0.3);">
+            <div class="feature-icon-box">🏁</div>
+            <h3>M High-Performance DNA</h3>
+            <p>Every curve, vent, and carbon fiber stabilizer is engineered in Munich with active M Differential and track-ready cooling systems for unrelenting apex control.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feature-card" style="--card-gradient: var(--grad-electric); --card-glow: rgba(0,242,254,0.3);">
+            <div class="feature-icon-box">⚡</div>
+            <h3>BMW eDrive 5th Generation</h3>
+            <p>Electrifying instant torque with ultra-dense battery architectures and aerodynamic kinetic recovery delivering whisper-silent acceleration and over 320 miles of range.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feature-card" style="--card-gradient: var(--grad-violet); --card-glow: rgba(138,43,226,0.3);">
+            <div class="feature-icon-box">🔮</div>
+            <h3>BMW Operating System 9</h3>
+            <p>A monolithic curved infotainment display featuring QuickSelect zero-layer widgets, heads-up augmented reality, and AI-driven predictive driver personalization.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="m-brand-stripe"></div>
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-brand" style="margin-bottom: 0.8rem;">
+            <svg class="bmw-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="48" fill="#000" stroke="#ccc" stroke-width="2"/>
+              <path d="M50,50 L50,18 A32,32 0 0,1 82,50 Z" fill="#0066b1"/>
+              <path d="M50,50 L82,50 A32,32 0 0,1 50,82 Z" fill="#ffffff"/>
+              <path d="M50,50 L50,82 A32,32 0 0,1 18,50 Z" fill="#0066b1"/>
+              <path d="M50,50 L18,50 A32,32 0 0,1 50,18 Z" fill="#ffffff"/>
+            </svg>
+            <span class="brand-title" style="margin-left: 8px;">BMW</span>
+          </div>
+          <p>Sheer Driving Pleasure redefined through bold color expressions, motorsport precision, and electric intelligence.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Instagram">IG</a>
+            <a href="#" class="social-btn" aria-label="YouTube">YT</a>
+            <a href="#" class="social-btn" aria-label="X">𝕏</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="models.html">All Models</a></li>
+            <li><a href="models.html#artcars">BMW Art Cars</a></li>
+            <li><a href="experience.html">Build Your BMW</a></li>
+            <li><a href="experience.html#testdrive">Book Test Drive</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Performance</h4>
+          <ul class="footer-links">
+            <li><a href="#">BMW M Motorsport</a></li>
+            <li><a href="#">BMW i Electric</a></li>
+            <li><a href="#">BMW Individual</a></li>
+            <li><a href="#">Concept Vehicles</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="#">Find a Showroom</a></li>
+            <li><a href="#">Customer Care</a></li>
+            <li><a href="#">Financial Services</a></li>
+            <li><a href="#">Press & Media</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 BMW AG. Concept Prototype Showcase for demonstration purposes.</p>
+      <p>Crafted with HTML5, CSS3, & Modern Vanilla JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/customizer.js"></script>
+</body>
+</html>
